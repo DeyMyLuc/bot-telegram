@@ -35,8 +35,7 @@ def responder(message):
     )
 # Permitir o bot funcionar em grupos
 @bot.message_handler(commands=['start'])
-def start(message)
-# Já roda automaticamente  em grupos
+def start(message): # Já roda automaticamente  em grupos
 usuarios = [] #Lista de IDs
 @bot.message_handler(commands=['start'])
 def start (message):
