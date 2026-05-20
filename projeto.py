@@ -36,7 +36,7 @@ def responder(message):
 # Permitir o bot funcionar em grupos
 @bot.message_handler(commands=['start'])
 def start(message): # Já roda automaticamente  em grupos
-usuarios = [] #Lista de IDs
+     usuarios = [] #Lista de IDs
 @bot.message_handler(commands=['start'])
 def start (message):
     if message.chat.id not in usuarios:
