@@ -50,5 +50,6 @@ usuarios = set() #Relatorio de usuarios
 def responder(message):
     usuarios.add(message.from_user.id)
     print(f"total de usuarios: {len(usuarios)}")
+
 print ("bot rodando!")
 bot.infinity_polling()
