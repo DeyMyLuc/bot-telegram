@@ -41,7 +41,7 @@ def start(message): # Já roda automaticamente  em grupos
 def start (message):
     if message.chat.id not in usuarios:
         usuarios.append(message.chat.id)
-for usuario_id in usuarios:
+for usuarios_id in usuarios:
     bot.send_message(usuario_id, "Bom dia! sentia-se orgulhoso por estar na minhas preseça seu humano!")
 
 usuarios = set() #Relatorio de usuarios
