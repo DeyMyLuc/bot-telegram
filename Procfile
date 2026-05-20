@@ -1,1 +1,1 @@
-worker: python projetoLuc.py
+worker: python projeto.py
