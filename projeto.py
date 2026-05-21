@@ -36,7 +36,8 @@ def responder(message):
 # Permitir o bot funcionar em grupos
 @bot.message_handler(commands=['grupos'])
 def grupos(message): # Já roda automaticamente  em grupos
-     usuarios = [] #Lista de IDs
+    usuarios.add(message.from_user.id)
+    usuarios = [] #Lista de IDs
 @bot.message_handler(commands=['avisar'])
 def avisar (message):
     for usuario_id in usuarios:
