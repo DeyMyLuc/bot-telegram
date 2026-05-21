@@ -40,7 +40,7 @@ def grupos(message): # Já roda automaticamente  em grupos
 @bot.message_handler(commands=['avisar'])
 def avisar (message):
     for usuario_id in usuarios:
-       bot.send_message(usuario_id, "Bom dia! sentia-se orgulhoso por estar na minhas preseça seu humano!")
+        bot.send_message(usuario_id, "Bom dia! sentia-se orgulhoso por estar na minhas preseça seu humano!")
         bot.reply_to(message, f"enviado para {len(usuarios)}usuários!")
 
 usuarios = set() #Relatorio de usuarios
