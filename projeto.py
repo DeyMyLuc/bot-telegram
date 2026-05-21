@@ -39,9 +39,9 @@ def grupos(message): # Já roda automaticamente  em grupos
      usuarios = [] #Lista de IDs
 @bot.message_handler(commands=['avisar'])
 def avisar (message):
+    for usuarios_id in usuarios:
     if message.chat.id not in usuarios:
         usuarios.append(message.chat.id)
-for usuarios_id in usuarios:
     bot.send_message(usuario_id, "Bom dia! sentia-se orgulhoso por estar na minhas preseça seu humano!")
 
 usuarios = set() #Relatorio de usuarios
