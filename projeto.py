@@ -34,11 +34,11 @@ def responder(message):
         "Use /start para ver o que sei fazer!"
     )
 # Permitir o bot funcionar em grupos
-@bot.message_handler(commands=['start'])
-def start(message): # Já roda automaticamente  em grupos
+@bot.message_handler(commands=['grupos'])
+def grupos(message): # Já roda automaticamente  em grupos
      usuarios = [] #Lista de IDs
-@bot.message_handler(commands=['start'])
-def start (message):
+@bot.message_handler(commands=['avisar'])
+def avisar (message):
     if message.chat.id not in usuarios:
         usuarios.append(message.chat.id)
 for usuarios_id in usuarios:
